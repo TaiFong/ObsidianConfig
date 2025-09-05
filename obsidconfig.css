@@ -1,0 +1,15 @@
+/* Body text uses Iosevka Term (monospace variant) */
+.markdown-preview-view {
+  font-family: "Iosevka Term", monospace !important;
+}
+
+/* Code blocks + inline code use Iosevka Term */
+code, pre {
+  font-family: "Iosevka Term", monospace !important;
+}
+
+/* Math stays default LaTeX font */
+.mathjax-inline,
+.mathjax-block {
+  font-family: inherit !important;
+}
