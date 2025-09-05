@@ -1,15 +1,13 @@
-/* Body text uses Iosevka Term (monospace variant) */
-.markdown-preview-view {
+/* Apply iosevka font everywhere */
+.workspace,
+.cm-s-obsidian {
   font-family: "Iosevka Term", monospace !important;
+  /*font-size: 14px; - adjust as needed */
 }
 
-/* Code blocks + inline code use Iosevka Term */
-code, pre {
-  font-family: "Iosevka Term", monospace !important;
-}
-
-/* Math stays default LaTeX font */
-.mathjax-inline,
-.mathjax-block {
-  font-family: inherit !important;
+/* Keep math in its original font */
+.markdown-preview-view .math,
+.CodeMirror pre {
+  font-family: "Latin Modern Math", "Cambria Math", serif;
+  font-size: 20px; /* slightly larger math for readability */
 }
